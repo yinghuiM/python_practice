@@ -15,8 +15,8 @@ def random_password(length, include_uppercase, include_symbol):
         password: string, the generated password
     """
 
-    if length <= 1 or length > 16:
-        print("The length of the password must be between 2 and 16")
+    if length < 6 or length > 16:
+        print("The length of the password must be between 6 and 16")
         raise ValueError
 
     result = ""
